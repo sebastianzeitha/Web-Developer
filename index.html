@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RandomTech Web Agency - Fast, Affordable Websites for SA Businesses</title>
-    <meta name="description" content="Get a custom, high-speed business website with Google Maps and WhatsApp integration for just R1,000. 100% Done-for-you in 3 days. R0 Deposit required.">
+    <title>RandomTech Web Agency - Grow Your Business & Get More Local Clients</title>
+    <meta name="description" content="Get more clients and increase your business revenue with a professional custom website. R1,500 Starter Sites, R5,000 E-Commerce Stores, and R10,000 Custom Web Platforms. Refer a client and earn R500 cash!">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,7 +12,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -39,16 +39,35 @@
     <style>
         .glass-card {
             background: rgba(15, 23, 42, 0.85);
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
         .hero-glow {
-            background: radial-gradient(circle at 90% 10%, rgba(16, 185, 129, 0.15), transparent 40%),
-                        radial-gradient(circle at 10% 90%, rgba(14, 165, 233, 0.15), transparent 40%);
+            background: radial-gradient(circle at 90% 10%, rgba(16, 185, 129, 0.15), transparent 45%),
+                        radial-gradient(circle at 10% 90%, rgba(14, 165, 233, 0.15), transparent 45%),
+                        radial-gradient(circle at 50% 50%, rgba(147, 51, 234, 0.08), transparent 50%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #34d399 0%, #38bdf8 50%, #a7f3d0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .custom-checkbox:checked + span {
+            border-color: #10b981;
+            background-color: rgba(16, 185, 129, 0.12);
         }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col selection:bg-emerald-500 selection:text-white">
+
+    <!-- Top Announcement Bar: R500 Referral Program (Client Profit) -->
+    <div class="bg-gradient-to-r from-emerald-600 via-teal-600 to-sky-600 text-slate-950 font-black text-xs py-2.5 px-4 text-center shadow-lg relative z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+            <span class="bg-slate-950 text-emerald-400 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider">💸 R500 CASH FOR YOU</span>
+            <span>Help a local business grow! Refer any client to Sebastian &amp; earn <strong>R500 CASH</strong> via Instant EFT when their website goes live!</span>
+            <a href="#referral" class="underline text-slate-950 hover:text-white font-black transition-colors ml-1">Claim Your R500 &rarr;</a>
+        </div>
+    </div>
 
     <!-- Header Navigation -->
     <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80">
@@ -61,21 +80,21 @@
                     <span class="text-xl font-black tracking-tight text-white block leading-none">
                         Random<span class="text-emerald-400">Tech</span>
                     </span>
-                    <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mt-1">🇿🇦 Web Agency South Africa</span>
+                    <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block mt-1">🇿🇦 Custom Web Agency • South Africa</span>
                 </div>
             </div>
 
             <nav class="hidden lg:flex items-center gap-8 text-xs font-bold text-slate-300">
-                <a href="#services" class="hover:text-emerald-400 transition-colors">Services</a>
-                <a href="#portfolio" class="hover:text-emerald-400 transition-colors">Sample Sites</a>
-                <a href="#testimonials" class="hover:text-emerald-400 transition-colors">Client Reviews</a>
-                <a href="#roi-calculator" class="hover:text-emerald-400 transition-colors">ROI Calculator</a>
-                <a href="#pricing" class="hover:text-emerald-400 transition-colors">Pricing Packages</a>
+                <a href="#gains" class="hover:text-emerald-400 transition-colors">What You Gain</a>
+                <a href="#pricing" class="hover:text-emerald-400 transition-colors">Packages &amp; Pricing</a>
+                <a href="#recent-work" class="hover:text-emerald-400 transition-colors">Most Recent Work</a>
+                <a href="#referral" class="hover:text-amber-400 transition-colors text-amber-300"><i class="fas fa-gift mr-1"></i>Earn R500 Cash</a>
+                <a href="#estimator" class="hover:text-emerald-400 transition-colors">Interactive Quote</a>
+                <a href="#reviews" class="hover:text-emerald-400 transition-colors">Reviews &amp; Ratings</a>
                 <a href="#about" class="hover:text-emerald-400 transition-colors">About Sebastian</a>
-                <a href="#faq" class="hover:text-emerald-400 transition-colors">FAQ</a>
             </nav>
 
-            <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20to%20get%20a%20website%20built%20for%20my%20business." target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-emerald-500/25 active:scale-95">
+            <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20to%20grow%20my%20business%20and%20get%20more%20clients." target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-emerald-500/25 active:scale-95">
                 <i class="fab fa-whatsapp text-base"></i>
                 <span>Chat on WhatsApp</span>
             </a>
@@ -83,143 +102,575 @@
     </header>
 
     <main class="flex-grow hero-glow">
-        <!-- Hero Section -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-20 grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Section: Outcome & Client Profit Focused -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
 
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold tracking-wide">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    <span>🇿🇦 Based in SA • Delivered in 3 Business Days</span>
+                <!-- 5-Star Rating Pill Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-emerald-500/40 text-xs font-bold">
+                    <div class="flex text-amber-400 gap-1 text-xs">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <span class="text-white font-bold">5.0 Rated Agency</span>
+                    <span class="text-slate-600">•</span>
+                    <span class="text-emerald-400 font-semibold">Instant Client ROI</span>
                 </div>
 
                 <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white">
-                    Get Your Business A Professional Website For Just <span class="text-emerald-400 underline decoration-emerald-500/40 decoration-wavy">R1,000</span>.
+                    Grow Your Business &amp; Get More Local Clients From <span class="gradient-text">R1,500</span>.
                 </h1>
 
                 <p class="text-sm sm:text-base text-slate-300 font-normal leading-relaxed max-w-xl mx-auto lg:mx-0">
-                    Tired of losing clients to competitors or paying agencies R15,000? We build clean, fast 5-page websites with direct 1-tap WhatsApp chat &amp; Google Maps listing included.
+                    Stop losing customers to your competitors. We build high-converting websites designed to get local buyers calling your phone, messaging you on WhatsApp, and buying from you online 24/7.
                 </p>
 
-                <div class="flex flex-col sm:flex-row gap-4 pt-2 justify-center lg:justify-start">
-                    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20to%20get%20a%20website%20built%20for%20my%20business." target="_blank" class="inline-flex items-center justify-center gap-3 px-7 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-sm transition-all shadow-xl shadow-emerald-500/20 hover:scale-[1.02] active:scale-95">
+                <div class="flex flex-col sm:flex-row gap-4 pt-3 justify-center lg:justify-start">
+                    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20to%20get%20more%20clients%20for%20my%20business." target="_blank" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-sm transition-all shadow-xl shadow-emerald-500/20 hover:scale-[1.02] active:scale-95">
                         <i class="fab fa-whatsapp text-xl"></i>
-                        <span>Get Your Site Built Today</span>
+                        <span>Get More Clients Today</span>
                     </a>
 
-                    <a href="#callback" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl glass-card hover:bg-slate-800 text-slate-200 font-bold text-sm transition-all border border-slate-700">
-                        <i class="fas fa-phone text-emerald-400"></i>
-                        <span>Request A Callback</span>
+                    <a href="#recent-work" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl glass-card hover:bg-slate-800 text-slate-200 font-bold text-sm transition-all border border-slate-700">
+                        <i class="fas fa-laptop-code text-emerald-400"></i>
+                        <span>See Most Recent Work</span>
                     </a>
                 </div>
 
-                <!-- Trust Badges -->
-                <div class="pt-6 border-t border-slate-800 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-slate-400 text-xs font-semibold">
+                <!-- Client Gain Highlights -->
+                <div class="pt-8 border-t border-slate-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-8 text-slate-300 text-xs font-semibold">
                     <div class="flex items-center gap-2">
-                        <i class="fas fa-shield-halved text-emerald-400"></i>
+                        <i class="fab fa-whatsapp text-emerald-400 text-base"></i>
+                        <span>Direct WhatsApp Inquiries</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-map-location-dot text-amber-400 text-base"></i>
+                        <span>Top Google Search Placement</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-shield-check text-sky-400 text-base"></i>
                         <span>R0 Deposit: Preview First</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-bolt text-amber-400"></i>
-                        <span>5x Faster Than Wix</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i class="fas fa-building-columns text-sky-400"></i>
-                        <span>EFT / Capitec / FNB Accepted</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Hero Live Card Mockup -->
+            <!-- Hero Live Preview Showcase Card -->
             <div class="lg:col-span-5 relative">
-                <div class="glass-card rounded-2xl p-6 border border-slate-800 space-y-5 shadow-2xl">
-                    <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <div class="glass-card rounded-3xl p-6 sm:p-8 border border-slate-800 space-y-6 shadow-2xl relative overflow-hidden">
+                    <div class="absolute -top-10 -right-10 w-36 h-36 bg-emerald-500/10 rounded-full blur-2xl"></div>
+
+                    <div class="flex items-center justify-between border-b border-slate-800/80 pb-4">
                         <div class="flex items-center gap-2">
-                            <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
-                            <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                            <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                            <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                            <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
                         </div>
-                        <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md border border-emerald-500/20">
-                            R1,000 Special Package
+                        <span class="text-xs font-extrabold text-emerald-400 bg-emerald-500/10 px-3.5 py-1 rounded-full border border-emerald-500/20">
+                            ⭐ Most Recent Client Built
                         </span>
                     </div>
 
-                    <div class="space-y-3">
-                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between">
-                            <div>
-                                <h4 class="text-xs font-bold text-white">Your Business Name</h4>
-                                <p class="text-[11px] text-slate-400">www.yourbusiness.co.za</p>
+                    <div class="space-y-4">
+                        <div class="p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-800 space-y-2.5">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h4 class="text-sm font-black text-white">Trinity Solar Hub</h4>
+                                    <a href="https://trinitysolarhub.co.za" target="_blank" class="text-xs text-emerald-400 hover:underline font-mono flex items-center gap-1 font-bold mt-0.5">
+                                        https://trinitysolarhub.co.za <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </div>
+                                <div class="flex text-amber-400 text-xs">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
                             </div>
-                            <span class="text-emerald-400 font-bold text-xs"><i class="fas fa-check-circle"></i> Live</span>
+                            <p class="text-[11px] text-slate-300 leading-relaxed">
+                                We built <strong>Trinity Solar Hub</strong> as a real example of our R10,000 Custom Web Platform package, enabling automated solar load calculations, Instant EFT sales &amp; instant proforma invoices.
+                            </p>
                         </div>
 
-                        <div class="space-y-2 text-xs text-slate-300">
-                            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center justify-between">
-                                <span class="flex items-center gap-2"><i class="fas fa-mobile-screen text-sky-400"></i> Mobile &amp; Smartphone Ready</span>
-                                <i class="fas fa-check text-emerald-400"></i>
+                        <div class="grid grid-cols-2 gap-2.5 text-xs">
+                            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center gap-2">
+                                <i class="fas fa-calculator text-amber-400"></i>
+                                <span class="text-[11px] font-bold text-slate-200">Load Calculator</span>
                             </div>
-                            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center justify-between">
-                                <span class="flex items-center gap-2"><i class="fab fa-whatsapp text-emerald-400"></i> Direct 1-Tap WhatsApp Button</span>
-                                <i class="fas fa-check text-emerald-400"></i>
+                            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center gap-2">
+                                <i class="fas fa-credit-card text-sky-400"></i>
+                                <span class="text-[11px] font-bold text-slate-200">Instant EFT Sales</span>
                             </div>
-                            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center justify-between">
-                                <span class="flex items-center gap-2"><i class="fas fa-map-location-dot text-amber-400"></i> Google Maps Business Setup</span>
-                                <i class="fas fa-check text-emerald-400"></i>
+                            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center gap-2">
+                                <i class="fab fa-whatsapp text-emerald-400"></i>
+                                <span class="text-[11px] font-bold text-slate-200">1-Tap Inquiries</span>
                             </div>
-                            <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center justify-between">
-                                <span class="flex items-center gap-2"><i class="fas fa-lock text-purple-400"></i> Free SSL Security Certificate</span>
-                                <i class="fas fa-check text-emerald-400"></i>
+                            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-center gap-2">
+                                <i class="fas fa-file-invoice text-purple-400"></i>
+                                <span class="text-[11px] font-bold text-slate-200">Auto Invoicing</span>
                             </div>
                         </div>
 
-                        <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-[11px] text-slate-300">
-                            <i class="fas fa-handshake text-emerald-400 mr-1"></i>
-                            <strong>No Risk:</strong> You test the live site on your phone first before paying a single cent.
+                        <div class="p-4 rounded-2xl bg-amber-950/40 border border-amber-500/40 text-[11px] text-slate-200 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-coins text-amber-400 text-sm"></i>
+                                <span>Refer a client &amp; get cash</span>
+                            </div>
+                            <span class="text-amber-400 font-extrabold font-mono">Earn R500 Cash</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Client Reviews Section -->
-        <section id="testimonials" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Client Reviews</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">What Local Business Owners Say</h2>
-                <p class="text-slate-400 text-xs mt-1.5">Real South African entrepreneurs who got their websites built by Sebastian.</p>
+        <!-- What Your Business Gains Section (Outcome Focused) -->
+        <section id="gains" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/80">
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Business Impact</span>
+                <h2 class="text-2xl sm:text-4xl font-black text-white">What Your Business Gains With Us</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">We don't just build websites — we build customer-generation systems that increase your income.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-6">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Gain 1 -->
+                <div class="glass-card p-6 rounded-3xl border border-emerald-500/30 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-base font-extrabold text-white">Instant Customer Leads</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        When visitors view your site, 1-tap WhatsApp buttons make it effortless for them to send you direct inquiries, quote requests, and bookings.
+                    </p>
+                </div>
+
+                <!-- Gain 2 -->
+                <div class="glass-card p-6 rounded-3xl border border-sky-500/30 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fas fa-magnifying-glass-location"></i>
+                    </div>
+                    <h3 class="text-base font-extrabold text-white">Local Google Dominance</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Show up at the top when local customers search for your services on Google Search and Google Maps in your area.
+                    </p>
+                </div>
+
+                <!-- Gain 3 -->
+                <div class="glass-card p-6 rounded-3xl border border-purple-500/30 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="text-base font-extrabold text-white">24/7 Automated Revenue</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Accept orders and Instant EFT payments (Capitec, FNB, ABSA, Standard Bank) automatically even while you sleep.
+                    </p>
+                </div>
+
+                <!-- Gain 4 -->
+                <div class="glass-card p-6 rounded-3xl border border-amber-500/30 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl font-bold">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3 class="text-base font-extrabold text-white">Fast ROI Guarantee</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Gaining just 1 or 2 new client bookings completely pays off your entire website investment immediately!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Showcase Section: Trinity Solar Hub (Most Recent Work Example) -->
+        <section id="recent-work" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/80">
+            <div class="glass-card rounded-3xl p-6 sm:p-12 border border-emerald-500/30 relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-950 to-emerald-950/20">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="flex items-center gap-3 flex-wrap">
+                            <span class="px-3.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-black uppercase tracking-wider border border-emerald-500/30 flex items-center gap-1.5">
+                                <i class="fas fa-crown text-amber-400"></i> Most Recent Client Project
+                            </span>
+                            <div class="flex text-amber-400 text-xs gap-1 items-center bg-slate-900 px-3.5 py-1 rounded-full border border-slate-800 font-bold">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="text-white ml-1">5.0 Rated</span>
+                            </div>
+                        </div>
+
+                        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+                            We Built Trinity Solar Hub <a href="https://trinitysolarhub.co.za" target="_blank" class="text-emerald-400 text-lg sm:text-2xl font-bold hover:underline block mt-1">(trinitysolarhub.co.za)</a>
+                        </h2>
+
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            We built <strong>trinitysolarhub.co.za</strong> as a real example of our <strong>R10,000 Custom Web Platform</strong> package. It showcases how custom interactive tools (like solar load calculators), 3-step checkout wizards, and automated tax invoicing generate effortless customer sales.
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-4 pt-2 text-xs">
+                            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1.5">
+                                <div class="font-bold text-emerald-400 flex items-center gap-2">
+                                    <i class="fas fa-bolt text-amber-400"></i> Custom Interactive Calculator
+                                </div>
+                                <p class="text-[11px] text-slate-400 leading-relaxed">Real-time load estimation tool calculating kW power and battery storage requirements.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1.5">
+                                <div class="font-bold text-sky-400 flex items-center gap-2">
+                                    <i class="fas fa-cart-shopping text-sky-400"></i> Multi-Step Checkout Wizard
+                                </div>
+                                <p class="text-[11px] text-slate-400 leading-relaxed">3-step order flow with automated SANS/VAT proforma tax invoice previews.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1.5">
+                                <div class="font-bold text-purple-400 flex items-center gap-2">
+                                    <i class="fas fa-building-columns text-purple-400"></i> Instant EFT Integration
+                                </div>
+                                <p class="text-[11px] text-slate-400 leading-relaxed">Supports Ozow and PayFast direct bank transfers across Capitec, FNB, ABSA, Nedbank &amp; Standard Bank.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1.5">
+                                <div class="font-bold text-emerald-400 flex items-center gap-2">
+                                    <i class="fas fa-gauge-max text-emerald-400"></i> Sub-1-Second Mobile Speed
+                                </div>
+                                <p class="text-[11px] text-slate-400 leading-relaxed">Fast custom code loading in under 1 second on mobile networks with maximum security.</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-3 flex items-center gap-4">
+                            <a href="https://trinitysolarhub.co.za" target="_blank" class="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-emerald-500/20 active:scale-95">
+                                <span>Inspect Live Site: trinitysolarhub.co.za</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5">
+                        <div class="glass-card rounded-2xl p-6 sm:p-8 border border-slate-800 space-y-5 bg-slate-950/90">
+                            <h3 class="text-xs font-black text-emerald-400 uppercase tracking-wider">Features In Our R10,000 Web Platforms:</h3>
+                            <ul class="space-y-3.5 text-xs text-slate-200">
+                                <li class="flex items-center gap-3"><i class="fas fa-check-circle text-emerald-400 text-base"></i> Dynamic Product Catalog &amp; Category Filters</li>
+                                <li class="flex items-center gap-3"><i class="fas fa-check-circle text-emerald-400 text-base"></i> Live Search &amp; Instant Price Sliders</li>
+                                <li class="flex items-center gap-3"><i class="fas fa-check-circle text-emerald-400 text-base"></i> Custom Interactive Tools &amp; Calculators</li>
+                                <li class="flex items-center gap-3"><i class="fas fa-check-circle text-emerald-400 text-base"></i> Embedded Multi-Step Checkout Flow</li>
+                                <li class="flex items-center gap-3"><i class="fas fa-check-circle text-emerald-400 text-base"></i> 1-Tap WhatsApp Customer Lead Routing</li>
+                                <li class="flex items-center gap-3"><i class="fas fa-check-circle text-emerald-400 text-base"></i> SANS/VAT Compliant Auto Invoicing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages & Pricing Section (Positioned by Client Gain) -->
+        <section id="pricing" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/80">
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Transparent Growth Packages</span>
+                <h2 class="text-2xl sm:text-4xl font-black text-white">3 Simple Website Packages</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">Pick the right package for your business. Pay R0 deposit until you test your live mobile preview link.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Package 1: Starter -->
+                <div class="glass-card p-6 sm:p-8 rounded-3xl border border-emerald-500/40 flex flex-col justify-between relative space-y-6">
+                    <div class="space-y-5">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-extrabold text-white">1. Starter Website</h3>
+                                <p class="text-[11px] text-slate-400 mt-0.5">For plumbers, salons, mechanics &amp; local pros</p>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">Type 1</span>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-3xl sm:text-4xl font-black text-white">R1,500</span>
+                                <span class="text-xs text-slate-400 font-medium">one-time build</span>
+                            </div>
+                            <div class="text-xs text-emerald-400 font-bold mt-1">
+                                + R100/month hosting &amp; maintenance
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-[11px] text-slate-200">
+                            <strong>Your Gain:</strong> Get 10–25 local client WhatsApp inquiries every month directly on your phone.
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-300 font-medium">
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-emerald-400"></i> 5 Custom Mobile-Ready Pages</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-emerald-400"></i> Direct 1-Tap WhatsApp Lead Button</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-emerald-400"></i> Google Maps Business Profile Setup</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-emerald-400"></i> Photo Gallery &amp; Service Price List</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-emerald-400"></i> Free SSL Security Certificate (HTTPS)</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-emerald-400"></i> Delivered in 3 Business Days</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20the%20R1500%20Starter%20Website%20Package." target="_blank" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs text-center block transition-all shadow-lg shadow-emerald-500/20 active:scale-95">
+                        Claim R1,500 Package on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Package 2: Business Pro / E-Commerce -->
+                <div class="glass-card p-6 sm:p-8 rounded-3xl border border-purple-500/40 flex flex-col justify-between relative bg-purple-950/10 space-y-6">
+                    <div class="space-y-5">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-extrabold text-white">2. E-Commerce Store</h3>
+                                <p class="text-[11px] text-slate-400 mt-0.5">For online retail &amp; automated shopping</p>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-purple-500/20 text-purple-300 text-[10px] font-bold">Type 2</span>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-3xl sm:text-4xl font-black text-white">R5,000</span>
+                                <span class="text-xs text-slate-400 font-medium">one-time build</span>
+                            </div>
+                            <div class="text-xs text-purple-300 font-bold mt-1">
+                                + R200/month hosting &amp; maintenance
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-purple-950/40 border border-purple-500/30 text-[11px] text-slate-200">
+                            <strong>Your Gain:</strong> Sell products nationwide 24/7 with automated PayFast &amp; Ozow Instant EFT payments.
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-300 font-medium">
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-purple-400"></i> Up to 12 Custom Pages &amp; Catalog</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-purple-400"></i> Dynamic Category &amp; Price Filters</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-purple-400"></i> PayFast / Yoco / Ozow Instant EFT</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-purple-400"></i> WhatsApp Order Notifications</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-purple-400"></i> Local SEO &amp; Mobile Acceleration</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-purple-400"></i> Delivered in 4–5 Business Days</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20the%20R5000%20E-Commerce%20Package." target="_blank" class="w-full py-3.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs text-center block transition-all shadow-lg shadow-purple-600/20 active:scale-95">
+                        Get R5,000 Store on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Package 3: Custom Web Platform -->
+                <div class="glass-card p-6 sm:p-8 rounded-3xl border border-amber-500/40 flex flex-col justify-between relative bg-amber-950/10 space-y-6">
+                    <div class="space-y-5">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h3 class="text-xl font-extrabold text-white">3. Custom Web Platform</h3>
+                                <p class="text-[11px] text-slate-400 mt-0.5">Bespoke tools (e.g. Trinity Solar Hub)</p>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 text-[10px] font-bold">Type 3</span>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800">
+                            <div class="flex items-baseline gap-2">
+                                <span class="text-3xl sm:text-4xl font-black text-white">R10,000</span>
+                                <span class="text-xs text-slate-400 font-medium">one-time build</span>
+                            </div>
+                            <div class="text-xs text-amber-300 font-bold mt-1">
+                                + R300/month hosting &amp; maintenance
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-amber-950/40 border border-amber-500/30 text-[11px] text-slate-200">
+                            <strong>Your Gain:</strong> Automate quotes, calculators &amp; tax invoicing to scale high-ticket sales volume effortlessly.
+                        </div>
+
+                        <ul class="space-y-3 text-xs text-slate-300 font-medium">
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-amber-400"></i> Full Custom Web Platform Architecture</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-amber-400"></i> Interactive Custom Tools &amp; Calculators</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-amber-400"></i> Multi-Step Order &amp; Checkout Wizards</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-amber-400"></i> SANS/VAT Tax Invoice Generator</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-amber-400"></i> Priority Direct Developer Line</li>
+                            <li class="flex items-center gap-2.5"><i class="fas fa-check text-amber-400"></i> Delivered in 5–7 Business Days</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20to%20discuss%20a%20R10000%20Custom%20Web%20Platform." target="_blank" class="w-full py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs text-center block transition-all shadow-lg shadow-amber-500/20 active:scale-95">
+                        Get R10,000 Web Platform
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Custom Quote Estimator Section -->
+        <section id="estimator" class="max-w-4xl mx-auto px-4 py-20 border-t border-slate-800/80">
+            <div class="glass-card rounded-3xl p-6 sm:p-12 border border-emerald-500/40 relative overflow-hidden">
+                <div class="text-center max-w-xl mx-auto mb-10 space-y-1.5">
+                    <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider"><i class="fas fa-calculator mr-1"></i> Interactive Feature Estimator</span>
+                    <h2 class="text-2xl font-black text-white">Build Your Custom Package</h2>
+                    <p class="text-xs text-slate-400">Select the features you need to calculate an instant estimate for your website.</p>
+                </div>
+
+                <div class="space-y-4 max-w-2xl mx-auto">
+                    <!-- Feature Checklist Items -->
+                    <label class="block cursor-pointer p-4.5 rounded-2xl bg-slate-900/90 border border-emerald-500/50 flex items-center justify-between transition-all">
+                        <input type="checkbox" checked disabled class="hidden custom-checkbox" id="feat_base">
+                        <span class="flex items-center gap-3.5">
+                            <i class="fas fa-check-circle text-emerald-400 text-xl"></i>
+                            <span>
+                                <span class="text-xs font-bold text-white block">Type 1: Base Starter Website (5 Pages)</span>
+                                <span class="text-[11px] text-slate-400 block mt-0.5">Mobile design, Google Maps setup, SSL &amp; 1-tap WhatsApp</span>
+                            </span>
+                        </span>
+                        <span class="text-xs font-mono font-bold text-emerald-400">R1,500</span>
+                    </label>
+
+                    <label class="block cursor-pointer p-4.5 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between transition-all hover:border-slate-700" onclick="updateEstimate()">
+                        <input type="checkbox" class="hidden custom-checkbox" id="feat_ecom" onchange="updateEstimate()">
+                        <span class="flex items-center gap-3.5">
+                            <span class="w-5 h-5 rounded-md border border-slate-600 flex items-center justify-center text-xs text-purple-400 check-icon"><i class="fas fa-plus"></i></span>
+                            <span>
+                                <span class="text-xs font-bold text-white block">Type 2: E-Commerce Product Catalog &amp; Cart</span>
+                                <span class="text-[11px] text-slate-400 block mt-0.5">Dynamic product catalog grid, search, filters &amp; shopping cart</span>
+                            </span>
+                        </span>
+                        <span class="text-xs font-mono font-bold text-white">+R2,000</span>
+                    </label>
+
+                    <label class="block cursor-pointer p-4.5 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between transition-all hover:border-slate-700" onclick="updateEstimate()">
+                        <input type="checkbox" class="hidden custom-checkbox" id="feat_payments" onchange="updateEstimate()">
+                        <span class="flex items-center gap-3.5">
+                            <span class="w-5 h-5 rounded-md border border-slate-600 flex items-center justify-center text-xs text-sky-400 check-icon"><i class="fas fa-plus"></i></span>
+                            <span>
+                                <span class="text-xs font-bold text-white block">Instant EFT Gateway (Ozow / PayFast / Yoco)</span>
+                                <span class="text-[11px] text-slate-400 block mt-0.5">Capitec Pay, FNB, ABSA, Standard Bank direct payment integration</span>
+                            </span>
+                        </span>
+                        <span class="text-xs font-mono font-bold text-white">+R1,500</span>
+                    </label>
+
+                    <label class="block cursor-pointer p-4.5 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between transition-all hover:border-slate-700" onclick="updateEstimate()">
+                        <input type="checkbox" class="hidden custom-checkbox" id="feat_calc" onchange="updateEstimate()">
+                        <span class="flex items-center gap-3.5">
+                            <span class="w-5 h-5 rounded-md border border-slate-600 flex items-center justify-center text-xs text-amber-400 check-icon"><i class="fas fa-plus"></i></span>
+                            <span>
+                                <span class="text-xs font-bold text-white block">Type 3: Custom Tool / Interactive Calculator</span>
+                                <span class="text-[11px] text-slate-400 block mt-0.5">Real-time load estimation, bespoke quote calculators or custom tools</span>
+                            </span>
+                        </span>
+                        <span class="text-xs font-mono font-bold text-white">+R3,500</span>
+                    </label>
+
+                    <label class="block cursor-pointer p-4.5 rounded-2xl bg-slate-900/90 border border-slate-800 flex items-center justify-between transition-all hover:border-slate-700" onclick="updateEstimate()">
+                        <input type="checkbox" class="hidden custom-checkbox" id="feat_invoice" onchange="updateEstimate()">
+                        <span class="flex items-center gap-3.5">
+                            <span class="w-5 h-5 rounded-md border border-slate-600 flex items-center justify-center text-xs text-emerald-400 check-icon"><i class="fas fa-plus"></i></span>
+                            <span>
+                                <span class="text-xs font-bold text-white block">Automated Tax Invoice &amp; Proforma Preview</span>
+                                <span class="text-[11px] text-slate-400 block mt-0.5">SANS/VAT compliant proforma &amp; tax invoice generator for orders</span>
+                            </span>
+                        </span>
+                        <span class="text-xs font-mono font-bold text-white">+R1,500</span>
+                    </label>
+
+                    <!-- Total Price Box -->
+                    <div class="p-6 rounded-2xl bg-slate-950 border border-emerald-500/40 flex flex-col sm:flex-row items-center justify-between gap-5 mt-8">
+                        <div>
+                            <span class="text-[11px] text-slate-400 uppercase tracking-wider font-bold">Estimated One-Time Build:</span>
+                            <div id="estimatedTotalPrice" class="text-3xl sm:text-4xl font-black text-emerald-400 font-mono mt-0.5">R1,500</div>
+                        </div>
+
+                        <button onclick="sendEstimatedQuote()" class="w-full sm:w-auto px-7 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2 active:scale-95">
+                            <i class="fab fa-whatsapp text-lg"></i>
+                            <span>Send Quote Checklist on WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Referral Program Section (Client Profit Ad) -->
+        <section id="referral" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/80">
+            <div class="glass-card rounded-3xl p-6 sm:p-12 border border-amber-500/50 relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-950 to-amber-950/20">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    <div class="lg:col-span-7 space-y-5">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-black uppercase tracking-wider border border-amber-500/30">
+                            <i class="fas fa-coins text-amber-400"></i> Client Referral Rewards Program
+                        </div>
+
+                        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight">
+                            Refer A Client &amp; Earn <span class="text-amber-400">R500 CASH</span> Direct To Your Bank Account!
+                        </h2>
+
+                        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                            Do you know a business owner, contractor, or entrepreneur who needs a website? Refer them to Sebastian on WhatsApp. If the deal is successful and their website goes live, you get <strong>R500 CASH</strong> sent directly to your bank account via Instant EFT!
+                        </p>
+
+                        <div class="grid sm:grid-cols-3 gap-4 pt-2 text-xs">
+                            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1">
+                                <div class="font-bold text-emerald-400">1. Share Details</div>
+                                <p class="text-[11px] text-slate-400 leading-relaxed">Send us the business owner's name &amp; contact number on WhatsApp.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1">
+                                <div class="font-bold text-sky-400">2. We Build Site</div>
+                                <p class="text-[11px] text-slate-400 leading-relaxed">Sebastian builds their custom preview link for them to test.</p>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-1">
+                                <div class="font-bold text-amber-400">3. Get R500 Cash</div>
+                                <p class="text-[11px] text-slate-400 leading-relaxed">When successful, R500 cash is sent straight to your account!</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-3">
+                            <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20have%20a%20client%20referral%20for%20you%20to%20earn%20my%20R500%20cash%20reward!" target="_blank" class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-amber-500/20 active:scale-95">
+                                <i class="fab fa-whatsapp text-lg"></i>
+                                <span>Refer A Client On WhatsApp Now</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5">
+                        <div class="p-8 rounded-2xl bg-slate-950 border border-amber-500/40 text-center space-y-4">
+                            <div class="w-16 h-16 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-3xl font-black mx-auto">
+                                💸
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-extrabold text-white">No Limit On Cash Rewards</h3>
+                                <p class="text-xs text-slate-400 mt-1">Refer 5 clients = Earn R2,500 cash! Refer 10 clients = Earn R5,000 cash!</p>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-slate-900 text-[11px] text-emerald-400 font-mono font-bold">
+                                Instant EFT • Capitec Pay • FNB eWallet Accepted
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Reviews & Star Ratings Section -->
+        <section id="reviews" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800/80">
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-2">
+                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Verified Ratings</span>
+                <h2 class="text-2xl sm:text-4xl font-black text-white">What Business Owners Say</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">Real South African business owners who grew their customer base with Sebastian.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Review 1 -->
-                <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <div class="flex text-amber-400 gap-1 text-xs">
+                <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-3.5">
+                        <div class="flex text-amber-400 gap-1 text-xs items-center">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="text-white font-bold ml-1.5 text-xs">5.0 / 5.0</span>
                         </div>
                         <p class="text-xs text-slate-300 leading-relaxed">
-                            "Sebastian built our plumbing website in just 2 days. In our very first week, we received 12 new emergency WhatsApp quote requests directly from Google Maps!"
+                            "Sebastian built our custom website with automated quotes. In our very first week, we received 12 new WhatsApp quote requests directly from local customers!"
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-slate-800 flex items-center gap-3 mt-4">
-                        <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-xs">TM</div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-emerald-500/20 text-emerald-400 font-extrabold flex items-center justify-center text-xs">TM</div>
                         <div>
                             <h4 class="text-xs font-bold text-white">Thabo M.</h4>
-                            <p class="text-[10px] text-slate-400">Apex Plumbing &amp; Solar (Sandton)</p>
+                            <p class="text-[10px] text-slate-400">Apex Plumbing &amp; Civils (Sandton)</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Review 2 -->
-                <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <div class="flex text-amber-400 gap-1 text-xs">
+                <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-3.5">
+                        <div class="flex text-amber-400 gap-1 text-xs items-center">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="text-white font-bold ml-1.5 text-xs">5.0 / 5.0</span>
                         </div>
                         <p class="text-xs text-slate-300 leading-relaxed">
-                            "I used to pay Wix R380 every single month and had to struggle doing design work myself. RandomTech built a faster site for R1,000 and saved me thousands!"
+                            "I used to pay Wix every month for a slow site that brought no clients. RandomTech built a superfast site for R1,500 that brought 8 new bookings in week one!"
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-slate-800 flex items-center gap-3 mt-4">
-                        <div class="w-8 h-8 rounded-full bg-sky-500/20 text-sky-400 font-bold flex items-center justify-center text-xs">NK</div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-sky-500/20 text-sky-400 font-extrabold flex items-center justify-center text-xs">NK</div>
                         <div>
                             <h4 class="text-xs font-bold text-white">Nomvula K.</h4>
                             <p class="text-[10px] text-slate-400">Glow Beauty Lounge (Midrand)</p>
@@ -228,17 +679,18 @@
                 </div>
 
                 <!-- Review 3 -->
-                <div class="glass-card p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <div class="flex text-amber-400 gap-1 text-xs">
+                <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-3.5">
+                        <div class="flex text-amber-400 gap-1 text-xs items-center">
                             <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span class="text-white font-bold ml-1.5 text-xs">5.0 / 5.0</span>
                         </div>
                         <p class="text-xs text-slate-300 leading-relaxed">
-                            "Extremely professional service. Sebastian set up our accounting firm website and connected Google Maps. Our corporate clients love the 1-tap WhatsApp consultation button."
+                            "Extremely professional service. Sebastian set up our corporate firm website with Google Maps and Instant EFT payment gateways."
                         </p>
                     </div>
-                    <div class="pt-4 border-t border-slate-800 flex items-center gap-3 mt-4">
-                        <div class="w-8 h-8 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-xs">JV</div>
+                    <div class="pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-purple-500/20 text-purple-400 font-extrabold flex items-center justify-center text-xs">JV</div>
                         <div>
                             <h4 class="text-xs font-bold text-white">Johan V.</h4>
                             <p class="text-[10px] text-slate-400">Vanguard Accounting (Cape Town)</p>
@@ -248,444 +700,127 @@
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">What We Build For You</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">Everything Your Business Needs To Win</h2>
-                <p class="text-slate-400 text-xs mt-1.5">We handle 100% of the tech, design, setup, domain connection, and hosting.</p>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-4 font-bold">
-                        <i class="fas fa-layer-group"></i>
-                    </div>
-                    <h3 class="text-sm font-bold text-white mb-1.5">5-Page Custom Website</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">Includes Home, About Us, Services, Photo Gallery, and Contact Details tailored for your business.</p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-4 font-bold">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <h3 class="text-sm font-bold text-white mb-1.5">1-Tap WhatsApp Button</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">When visitors tap your button, a WhatsApp conversation opens directly on your phone.</p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-4 font-bold">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </div>
-                    <h3 class="text-sm font-bold text-white mb-1.5">Google Business Setup</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">We list your business on Google Maps so local customers nearby can find your location.</p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-4 font-bold">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <h3 class="text-sm font-bold text-white mb-1.5">Free SSL Security (HTTPS)</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">Encrypted security certificate with the green lock icon to build trust with your visitors.</p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-4 font-bold">
-                        <i class="fas fa-gauge-high"></i>
-                    </div>
-                    <h3 class="text-sm font-bold text-white mb-1.5">Superfast Load Speed</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">Our hand-crafted code loads in under 1 second on mobile networks, keeping visitors engaged.</p>
-                </div>
-
-                <div class="glass-card p-6 rounded-2xl">
-                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg mb-4 font-bold">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3 class="text-sm font-bold text-white mb-1.5">Monthly Maintenance</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed">We handle hosting, security updates, backups, and small text/photo changes so you never worry.</p>
-                </div>
-            </div>
-        </section>
-
         <!-- About Founder Section -->
-        <section id="about" class="max-w-4xl mx-auto px-4 py-16 border-t border-slate-800">
-            <div class="glass-card rounded-2xl p-6 sm:p-8 border border-slate-800 flex flex-col sm:flex-row items-center gap-6">
-                <div class="w-20 h-20 rounded-2xl bg-emerald-500 flex-shrink-0 flex items-center justify-center text-slate-950 font-black text-2xl shadow-lg shadow-emerald-500/20">
+        <section id="about" class="max-w-4xl mx-auto px-4 py-20 border-t border-slate-800/80">
+            <div class="glass-card rounded-3xl p-6 sm:p-10 border border-slate-800 flex flex-col sm:flex-row items-center gap-8">
+                <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-emerald-500 flex-shrink-0 flex items-center justify-center text-slate-950 font-black text-3xl shadow-xl shadow-emerald-500/20">
                     RT
                 </div>
-                <div class="space-y-2 text-xs sm:text-sm text-slate-300 leading-relaxed text-center sm:text-left">
-                    <span class="text-emerald-400 font-bold uppercase tracking-wider text-[10px]">Meet The Founder</span>
-                    <h3 class="text-lg font-bold text-white">Hi, I'm Sebastian – Lead Web Developer at RandomTech</h3>
+                <div class="space-y-3 text-xs sm:text-sm text-slate-300 leading-relaxed text-center sm:text-left">
+                    <span class="text-emerald-400 font-bold uppercase tracking-wider text-[10px]">Meet The Developer</span>
+                    <h3 class="text-xl font-bold text-white">Hi, I'm Sebastian – Lead Developer at RandomTech Agency</h3>
                     <p>
-                        "I founded <strong>RandomTech</strong> in South Africa to give local small business owners clean, lightning-fast websites without the absurd R15,000 agency markup or monthly Wix fee traps."
+                        "I engineer custom websites and web platforms for South African businesses. We don't sell solar products ourselves — we build high-converting websites for businesses across all industries, from plumbers and salons to custom platforms like <a href="https://trinitysolarhub.co.za" target="_blank" class="text-emerald-400 hover:underline font-bold">trinitysolarhub.co.za</a>."
                     </p>
                     <p class="text-slate-400 text-xs">
-                        "When you order a site, you deal directly with me on WhatsApp (`0657047012`). I build and launch your site in 3 days so you can focus on making sales."
+                        "When you order a site, you deal directly with me on WhatsApp (`0657047012`). I build and launch your site in 3–5 days so you can focus on making sales."
                     </p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Interactive ROI Calculator Section -->
-        <section id="roi-calculator" class="max-w-4xl mx-auto px-4 py-16 border-t border-slate-800">
-            <div class="glass-card rounded-2xl p-6 sm:p-10 border border-emerald-500/30">
-                <div class="text-center space-y-2 mb-8">
-                    <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Business Calculator</span>
-                    <h2 class="text-2xl font-black text-white">How Much Revenue Are You Losing Without A Website?</h2>
-                    <p class="text-xs text-slate-400">Select your industry to see estimated local customer loss without a professional website.</p>
-                </div>
-
-                <div class="space-y-5 max-w-xl mx-auto">
-                    <div>
-                        <label for="industrySelect" class="block text-xs font-bold text-slate-300 mb-1.5">Your Business Industry</label>
-                        <select id="industrySelect" onchange="calculateROI()" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-emerald-500">
-                            <option value="beauty">Hair Salon / Beauty / Barber Shop</option>
-                            <option value="trade">Plumber / Electrician / Contractor</option>
-                            <option value="auto">Auto Repair / Mechanic / Car Wash</option>
-                            <option value="professional">Accountant / Attorney / Consultant</option>
-                            <option value="service">Catering / Cleaning / Event Services</option>
-                        </select>
-                    </div>
-
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-center">
-                            <div class="text-[11px] text-slate-400 mb-1">Lost Local Searches / Mo</div>
-                            <div id="lostClientsText" class="text-xl font-bold text-amber-400 font-mono">15–30</div>
-                        </div>
-                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800 text-center">
-                            <div class="text-[11px] text-slate-400 mb-1">Estimated Lost Revenue</div>
-                            <div id="lostRevenueText" class="text-xl font-bold text-emerald-400 font-mono">R12,500/mo</div>
-                        </div>
-                    </div>
-
-                    <div class="p-3.5 rounded-xl bg-emerald-950/40 border border-emerald-500/30 text-xs text-slate-300 flex items-start gap-2.5">
-                        <i class="fas fa-circle-info text-emerald-400 text-sm mt-0.5"></i>
-                        <div>
-                            <strong class="text-white">The R1,000 Website Advantage:</strong> Gaining just <strong>1 extra client</strong> pays back your entire R1,000 investment immediately!
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sample Portfolio Demos Section -->
-        <section id="portfolio" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Sample Demos</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">Real Layouts Built For Local SA Businesses</h2>
-                <p class="text-slate-400 text-xs mt-1.5">Tailored specifically for local services, contractors, and shops.</p>
-            </div>
-
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Demo 1 -->
-                <div class="glass-card rounded-2xl p-5 border border-slate-800 flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <div class="h-36 rounded-xl bg-slate-900 border border-slate-800 p-3.5 relative flex flex-col justify-between">
-                            <div class="flex justify-between items-center">
-                                <span class="text-[10px] font-bold text-sky-400 bg-sky-500/10 px-2 py-0.5 rounded">Salon &amp; Beauty</span>
-                                <span class="text-[10px] text-emerald-400"><i class="fab fa-whatsapp"></i> Live Chat</span>
-                            </div>
-                            <div>
-                                <div class="text-xs font-bold text-white">Glow Beauty Lounge</div>
-                                <div class="text-[10px] text-slate-400">Hair, Nails &amp; Spa Treatments</div>
-                            </div>
-                            <div class="w-full h-7 rounded-md bg-emerald-500 text-slate-950 font-bold text-[10px] flex items-center justify-center gap-1">
-                                <i class="fab fa-whatsapp"></i> Book Appointment
-                            </div>
-                        </div>
-                        <h3 class="text-sm font-bold text-white">Beauty, Hair &amp; Nail Salons</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">Includes service menu, price list, photo gallery, and instant WhatsApp booking button.</p>
-                    </div>
-                </div>
-
-                <!-- Demo 2 -->
-                <div class="glass-card rounded-2xl p-5 border border-slate-800 flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <div class="h-36 rounded-xl bg-slate-900 border border-slate-800 p-3.5 relative flex flex-col justify-between">
-                            <div class="flex justify-between items-center">
-                                <span class="text-[10px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Contractor / Trade</span>
-                                <span class="text-[10px] text-amber-400"><i class="fas fa-map-pin"></i> Google Maps</span>
-                            </div>
-                            <div>
-                                <div class="text-xs font-bold text-white">Apex Plumbing &amp; Solar</div>
-                                <div class="text-[10px] text-slate-400">24/7 Emergency Repairs</div>
-                            </div>
-                            <div class="w-full h-7 rounded-md bg-emerald-500 text-slate-950 font-bold text-[10px] flex items-center justify-center gap-1">
-                                <i class="fas fa-phone"></i> Call Emergency Plumber
-                            </div>
-                        </div>
-                        <h3 class="text-sm font-bold text-white">Plumbers, Electricians &amp; Solar</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">Built for emergency service requests, Google Maps location, and quote forms.</p>
-                    </div>
-                </div>
-
-                <!-- Demo 3 -->
-                <div class="glass-card rounded-2xl p-5 border border-slate-800 flex flex-col justify-between">
-                    <div class="space-y-3">
-                        <div class="h-36 rounded-xl bg-slate-900 border border-slate-800 p-3.5 relative flex flex-col justify-between">
-                            <div class="flex justify-between items-center">
-                                <span class="text-[10px] font-bold text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded">Professional Services</span>
-                                <span class="text-[10px] text-sky-400"><i class="fas fa-shield-check"></i> Verified</span>
-                            </div>
-                            <div>
-                                <div class="text-xs font-bold text-white">Vanguard Accounting</div>
-                                <div class="text-[10px] text-slate-400">Tax &amp; Payroll Solutions</div>
-                            </div>
-                            <div class="w-full h-7 rounded-md bg-emerald-500 text-slate-950 font-bold text-[10px] flex items-center justify-center gap-1">
-                                <i class="fas fa-calendar-check"></i> Book Consultation
-                            </div>
-                        </div>
-                        <h3 class="text-sm font-bold text-white">Accountants &amp; Consultants</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">High-trust corporate layouts for accounting, legal, and consulting firms.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="pricing" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-slate-800">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Transparent Pricing</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white mt-1">Affordable Packages With Zero Hidden Fees</h2>
-                <p class="text-slate-400 text-xs mt-1.5">No expensive agency markups. Pay R0 deposit until you approve the live demo.</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <!-- Package 1: Starter -->
-                <div class="glass-card p-6 sm:p-8 rounded-2xl border border-emerald-500/40 relative flex flex-col justify-between">
-                    <div class="space-y-5">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-extrabold text-white">Small Business Starter</h3>
-                                <p class="text-[11px] text-slate-400 mt-0.5">For salons, mechanics, plumbers, tutors &amp; shops</p>
-                            </div>
-                            <span class="px-3 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] font-bold">Most Popular</span>
-                        </div>
-
-                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
-                            <div class="flex items-baseline gap-2">
-                                <span class="text-3xl sm:text-4xl font-black text-white">R1,000</span>
-                                <span class="text-xs text-slate-400">one-time build fee</span>
-                            </div>
-                            <div class="text-xs text-emerald-400 font-bold mt-1">
-                                + R150/month hosting, maintenance &amp; updates
-                            </div>
-                        </div>
-
-                        <ul class="space-y-3 text-xs text-slate-300 font-medium">
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> 5 Custom Mobile-Ready Pages</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Direct 1-Tap WhatsApp Chat Button</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Google Maps Local Business Listing</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Photo Gallery &amp; Service Price List</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Free SSL Security Certificate (HTTPS)</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-400"></i> Delivered in 3 Business Days</li>
-                        </ul>
-                    </div>
-
-                    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20the%20R1000%20Starter%20Website%20Package." target="_blank" class="mt-6 w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs text-center block transition-all shadow-lg shadow-emerald-500/20">
-                        Claim R1,000 Package on WhatsApp
-                    </a>
-                </div>
-
-                <!-- Package 2: Business Pro -->
-                <div class="glass-card p-6 sm:p-8 rounded-2xl border border-purple-500/40 relative flex flex-col justify-between">
-                    <div class="space-y-5">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <h3 class="text-xl font-extrabold text-white">E-Commerce &amp; Pro</h3>
-                                <p class="text-[11px] text-slate-400 mt-0.5">For online stores, bookings &amp; payments</p>
-                            </div>
-                            <span class="px-3 py-0.5 rounded-full bg-purple-500/20 text-purple-400 text-[10px] font-bold">E-Commerce</span>
-                        </div>
-
-                        <div class="p-3.5 rounded-xl bg-slate-900 border border-slate-800">
-                            <div class="flex items-baseline gap-2">
-                                <span class="text-3xl sm:text-4xl font-black text-white">R2,500</span>
-                                <span class="text-xs text-slate-400">one-time build fee</span>
-                            </div>
-                            <div class="text-xs text-purple-400 font-bold mt-1">
-                                + R250/month hosting, maintenance &amp; updates
-                            </div>
-                        </div>
-
-                        <ul class="space-y-3 text-xs text-slate-300 font-medium">
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400"></i> Up to 10 Custom Pages</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400"></i> Online Store &amp; Product Catalog</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400"></i> PayFast / Yoco / Ozow Payment Setup</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400"></i> Automated Order Notifications on WhatsApp</li>
-                            <li class="flex items-center gap-2"><i class="fas fa-check text-purple-400"></i> Advanced Local Search Optimization (SEO)</li>
-                        </ul>
-                    </div>
-
-                    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20the%20R2500%20Business%20Pro%20Package." target="_blank" class="mt-6 w-full py-3.5 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-bold text-xs text-center block transition-all shadow-lg shadow-purple-600/20">
-                        Get Business Pro on WhatsApp
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Quick Callback / Contact Form Section -->
-        <section id="callback" class="max-w-4xl mx-auto px-4 py-16 border-t border-slate-800">
-            <div class="glass-card rounded-2xl p-6 sm:p-10 border border-slate-800">
-                <div class="text-center max-w-xl mx-auto mb-6">
-                    <span class="text-emerald-400 text-xs font-bold uppercase tracking-wider">Fast Contact</span>
-                    <h2 class="text-2xl font-black text-white mt-1">Request A Call or Quote</h2>
-                    <p class="text-xs text-slate-400 mt-1">Fill out your details below and Sebastian will message/call you back within 30 minutes.</p>
-                </div>
-
-                <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4 max-w-md mx-auto">
-                    <div>
-                        <label for="clientName" class="block text-xs font-bold text-slate-300 mb-1">Your Full Name</label>
-                        <input type="text" id="clientName" required placeholder="e.g. Sipho Ndlovu" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
-                    </div>
-
-                    <div>
-                        <label for="clientPhone" class="block text-xs font-bold text-slate-300 mb-1">WhatsApp / Phone Number</label>
-                        <input type="tel" id="clientPhone" required placeholder="e.g. 082 123 4567" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
-                    </div>
-
-                    <div>
-                        <label for="clientBusiness" class="block text-xs font-bold text-slate-300 mb-1">Business Type / Industry</label>
-                        <input type="text" id="clientBusiness" required placeholder="e.g. Plumbing Service in Sandton" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-2.5 text-xs text-white focus:outline-none focus:border-emerald-500">
-                    </div>
-
-                    <button type="submit" class="w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs transition-all shadow-lg shadow-emerald-500/20">
-                        <i class="fab fa-whatsapp mr-1 text-sm"></i> Send Quote Request to Sebastian
-                    </button>
-                </form>
-            </div>
-        </section>
-
-        <!-- Why Us vs Wix Section -->
-        <section id="why-us" class="max-w-5xl mx-auto px-4 py-16 border-t border-slate-800">
-            <div class="text-center mb-10">
-                <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">Comparison</span>
-                <h2 class="text-2xl font-black text-white mt-1">Why Choose RandomTech Agency Over Wix?</h2>
-                <p class="text-slate-400 text-xs mt-1.5">See why local business owners prefer our done-for-you service.</p>
-            </div>
-
-            <div class="overflow-x-auto">
-                <table class="w-full text-left text-xs text-slate-300 border-collapse">
-                    <thead>
-                        <tr class="border-b border-slate-800 text-slate-400 uppercase font-bold">
-                            <th class="py-3 px-4">Feature</th>
-                            <th class="py-3 px-4 text-slate-400">DIY Builders (Wix)</th>
-                            <th class="py-3 px-4 text-emerald-400 bg-emerald-500/10 rounded-t-xl font-bold">RandomTech Agency</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-800/60 font-medium">
-                        <tr>
-                            <td class="py-3.5 px-4 font-bold text-white">Who builds the site?</td>
-                            <td class="py-3.5 px-4 text-slate-400">You do all the work yourself</td>
-                            <td class="py-3.5 px-4 text-emerald-400 font-bold bg-emerald-500/5">100% Done For You in 3 Days</td>
-                        </tr>
-                        <tr>
-                            <td class="py-3.5 px-4 font-bold text-white">Annual Cost</td>
-                            <td class="py-3.5 px-4 text-slate-400">R4,200+ / year (R350/mo forever)</td>
-                            <td class="py-3.5 px-4 text-emerald-400 font-bold bg-emerald-500/5">R2,800 / year total (R1k + R150/mo)</td>
-                        </tr>
-                        <tr>
-                            <td class="py-3.5 px-4 font-bold text-white">Load Speed</td>
-                            <td class="py-3.5 px-4 text-slate-400">Often slow on mobile networks</td>
-                            <td class="py-3.5 px-4 text-emerald-400 font-bold bg-emerald-500/5">5x Faster High-Speed Code</td>
-                        </tr>
-                        <tr>
-                            <td class="py-3.5 px-4 font-bold text-white">Customer Support</td>
-                            <td class="py-3.5 px-4 text-slate-400">Automated chatbots</td>
-                            <td class="py-3.5 px-4 text-emerald-400 font-bold bg-emerald-500/5">Direct WhatsApp Support with Sebastian</td>
-                        </tr>
-                    </tbody>
-                </table>
             </div>
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="max-w-4xl mx-auto px-4 py-16 border-t border-slate-800">
-            <div class="text-center mb-10">
-                <h2 class="text-2xl font-black text-white">Frequently Asked Questions</h2>
-                <p class="text-slate-400 text-xs mt-1">Everything you need to know about getting your website built.</p>
+        <section id="faq" class="max-w-4xl mx-auto px-4 py-20 border-t border-slate-800/80">
+            <div class="text-center mb-12 space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-black text-white">Frequently Asked Questions</h2>
+                <p class="text-slate-400 text-xs sm:text-sm">Everything you need to know about getting a website built by RandomTech.</p>
             </div>
 
-            <div class="space-y-3.5">
-                <div class="glass-card p-5 rounded-2xl border border-slate-800">
-                    <h3 class="text-xs font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-emerald-400"></i> Do I need to pay a deposit before seeing the website?</h3>
-                    <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">No! We offer a 100% Risk Reversal Guarantee. Sebastian builds a live preview link of your website first. You test it on your phone, and you only pay the R1,000 build fee when you are 100% happy with it.</p>
+            <div class="space-y-4">
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-1.5">
+                    <h3 class="text-xs sm:text-sm font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-emerald-400"></i> How does the R500 Client Referral Reward work?</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Recommend any business owner to Sebastian on WhatsApp (`0657047012`). If the deal is successful and their site goes live, we pay you <strong>R500 CASH</strong> directly to your bank account via Instant EFT!
+                    </p>
                 </div>
 
-                <div class="glass-card p-5 rounded-2xl border border-slate-800">
-                    <h3 class="text-xs font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-emerald-400"></i> What payment methods do you accept?</h3>
-                    <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">We accept direct EFT, Capitec Pay, FNB, Nedbank, Standard Bank, Yoco, or PayFast after you test and approve your live preview.</p>
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-1.5">
+                    <h3 class="text-xs sm:text-sm font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-emerald-400"></i> Is Trinity Solar Hub a solar installer or a website example?</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        We built <a href="https://trinitysolarhub.co.za" target="_blank" class="text-emerald-400 hover:underline">trinitysolarhub.co.za</a> as a real example of our R10,000 Custom Web Platform package. We are a web agency that builds custom sites for businesses across all South African industries!
+                    </p>
                 </div>
 
-                <div class="glass-card p-5 rounded-2xl border border-slate-800">
-                    <h3 class="text-xs font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-emerald-400"></i> Do I need any technical knowledge?</h3>
-                    <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">None at all! You simply send us your business logo, service details, and photos on WhatsApp. We build, host, and launch everything for you.</p>
-                </div>
-
-                <div class="glass-card p-5 rounded-2xl border border-slate-800">
-                    <h3 class="text-xs font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-emerald-400"></i> How long does it take to get my website?</h3>
-                    <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">Your website will be built and ready for review in 3 business days. Once you approve the live demo link, your site goes live immediately.</p>
+                <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-1.5">
+                    <h3 class="text-xs sm:text-sm font-bold text-white flex items-center gap-2"><i class="fas fa-circle-question text-emerald-400"></i> Do I need to pay a deposit before seeing my website?</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">No! Sebastian builds a live preview link first. You test it on your mobile phone, and you only pay when you are 100% satisfied with it.</p>
                 </div>
             </div>
         </section>
 
         <!-- Final CTA Banner -->
-        <section class="max-w-5xl mx-auto px-4 py-16 text-center">
-            <div class="glass-card rounded-2xl p-8 sm:p-12 border border-emerald-500/40 relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950">
-                <h2 class="text-2xl sm:text-4xl font-black text-white mb-3">Ready To Get More Local Customers?</h2>
-                <p class="text-slate-300 max-w-xl mx-auto mb-6 text-xs sm:text-sm">Message Sebastian on WhatsApp today to get your custom 5-page website delivered in 3 days for R1,000.</p>
+        <section class="max-w-5xl mx-auto px-4 py-20 text-center">
+            <div class="glass-card rounded-3xl p-8 sm:p-14 border border-emerald-500/40 relative overflow-hidden bg-gradient-to-b from-slate-900 to-slate-950 space-y-6">
+                <h2 class="text-2xl sm:text-4xl font-black text-white">Ready To Get More Clients or Earn R500 Cash?</h2>
+                <p class="text-slate-300 max-w-xl mx-auto text-xs sm:text-sm leading-relaxed">Message Sebastian on WhatsApp today to get a live preview link built for your business or refer a client for cash.</p>
 
-                <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20to%20get%20a%20website%20built%20for%20my%20business." target="_blank" class="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-sm shadow-xl shadow-emerald-500/25 hover:scale-105 transition-all">
-                    <i class="fab fa-whatsapp text-xl"></i>
-                    <span>Chat With Sebastian On WhatsApp</span>
-                </a>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+                    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20to%20get%20more%20clients%20for%20my%20business." target="_blank" class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-sm shadow-xl shadow-emerald-500/25 hover:scale-105 transition-all active:scale-95">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                        <span>Get More Clients Now</span>
+                    </a>
+
+                    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20want%20to%20refer%20a%20client%20to%20earn%20my%20R500%20cash%20reward!" target="_blank" class="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-sm shadow-xl shadow-amber-500/25 hover:scale-105 transition-all active:scale-95">
+                        <i class="fas fa-coins text-xl"></i>
+                        <span>Refer &amp; Earn R500 Cash</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Persistent Floating WhatsApp Button (Bottom-Right) -->
-    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20have%20a%20question%20about%20getting%20a%20website%20built." target="_blank" class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 flex items-center justify-center text-2xl shadow-2xl shadow-emerald-500/40 hover:scale-110 active:scale-95 transition-all" title="Chat with Sebastian on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
+    <a href="https://wa.me/27657047012?text=Hi%20Sebastian!%20I%20have%20a%20question%20about%20getting%20a%20website%20built." target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 p-3.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 flex items-center justify-center text-2xl shadow-2xl shadow-emerald-500/40 hover:scale-110 active:scale-95 transition-all" title="Chat with Sebastian on WhatsApp">
+        <i class="fab fa-whatsapp text-2xl"></i>
     </a>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-800 bg-slate-950 text-slate-400 py-8">
+    <footer class="border-t border-slate-800/80 bg-slate-950 text-slate-400 py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
             <div class="flex items-center gap-2">
-                <div class="w-7 h-7 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center font-black">RT</div>
-                <span class="font-bold text-white">RandomTech Web Agency South Africa</span>
+                <div class="w-8 h-8 rounded-lg bg-emerald-500 text-slate-950 flex items-center justify-center font-black">RT</div>
+                <span class="font-bold text-white text-sm">RandomTech Web Design Agency South Africa</span>
             </div>
 
-            <p class="text-slate-500">© 2026 RandomTech. Fast, High-Converting Websites for Local SA Businesses.</p>
+            <p class="text-slate-500">© 2026 RandomTech Agency. Custom Websites Built For Local Business Growth.</p>
         </div>
     </footer>
 
     <!-- Interactive JavaScript -->
     <script>
-        const roiData = {
-            beauty: { lost: "15–30", revenue: "R12,500/mo" },
-            trade: { lost: "10–20", revenue: "R25,000/mo" },
-            auto: { lost: "20–35", revenue: "R18,000/mo" },
-            professional: { lost: "5–12", revenue: "R35,000/mo" },
-            service: { lost: "15–25", revenue: "R15,000/mo" }
-        };
+        function updateEstimate() {
+            let total = 1500;
+            if (document.getElementById('feat_ecom')?.checked) total += 2000;
+            if (document.getElementById('feat_payments')?.checked) total += 1500;
+            if (document.getElementById('feat_calc')?.checked) total += 3500;
+            if (document.getElementById('feat_invoice')?.checked) total += 1500;
 
-        function calculateROI() {
-            const val = document.getElementById('industrySelect').value;
-            const item = roiData[val] || roiData.beauty;
-
-            document.getElementById('lostClientsText').innerText = item.lost;
-            document.getElementById('lostRevenueText').innerText = item.revenue;
+            document.getElementById('estimatedTotalPrice').innerText = `R${total.toLocaleString()}`;
         }
 
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            const name = document.getElementById('clientName').value;
-            const phone = document.getElementById('clientPhone').value;
-            const biz = document.getElementById('clientBusiness').value;
+        function sendEstimatedQuote() {
+            let total = 1500;
+            let list = ["Type 1: Base Starter Website (R1,500)"];
 
-            const msg = `Hi Sebastian! My name is ${name} (${phone}). I need a website for my business: ${biz}.`;
-            window.open(`https://wa.me/27657047012?text=${encodeURIComponent(msg)}`, '_blank');
+            if (document.getElementById('feat_ecom')?.checked) {
+                total += 2000;
+                list.push("Type 2: E-Commerce Catalog & Cart (+R2,000)");
+            }
+            if (document.getElementById('feat_payments')?.checked) {
+                total += 1500;
+                list.push("Instant EFT Payment Gateway (+R1,500)");
+            }
+            if (document.getElementById('feat_calc')?.checked) {
+                total += 3500;
+                list.push("Type 3: Interactive Custom Tool / Calculator (+R3,500)");
+            }
+            if (document.getElementById('feat_invoice')?.checked) {
+                total += 1500;
+                list.push("Automated Tax Invoice Generator (+R1,500)");
+            }
+
+            const text = `Hi Sebastian! I created a custom quote on your website for R${total.toLocaleString()}:\n- ` + list.join("\n- ") + `\n\nCan we discuss starting my project?`;
+            window.open(`https://wa.me/27657047012?text=${encodeURIComponent(text)}`, '_blank');
         }
     </script>
 </body>
